@@ -12,6 +12,7 @@
 		E5AB7BD71D9E92DA0079BE5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AB7BD51D9E92DA0079BE5B /* Main.storyboard */; };
 		E5AB7BD91D9E92DA0079BE5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5AB7BD81D9E92DA0079BE5B /* Assets.xcassets */; };
 		E5AB7BDC1D9E92DA0079BE5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5AB7BDA1D9E92DA0079BE5B /* LaunchScreen.storyboard */; };
+		E5AB7BE51D9E93390079BE5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5AB7BE41D9E93390079BE5B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E5AB7BD81D9E92DA0079BE5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E5AB7BDB1D9E92DA0079BE5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5AB7BDD1D9E92DA0079BE5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5AB7BE41D9E93390079BE5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AB7BE51D9E93390079BE5B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				E5AB7BD01D9E92DA0079BE5B /* FaceTracking */,
 				E5AB7BCF1D9E92DA0079BE5B /* Products */,
+				E5AB7BE31D9E93390079BE5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				E5AB7BDD1D9E92DA0079BE5B /* Info.plist */,
 			);
 			path = FaceTracking;
+			sourceTree = "<group>";
+		};
+		E5AB7BE31D9E93390079BE5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5AB7BE41D9E93390079BE5B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +108,7 @@
 				TargetAttributes = {
 					E5AB7BCD1D9E92DA0079BE5B = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 27FAFL2WP5;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,7 +273,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				INFOPLIST_FILE = FaceTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.droidsonroids.FaceTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +287,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 27FAFL2WP5;
 				INFOPLIST_FILE = FaceTracking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.droidsonroids.FaceTracking;
 				PRODUCT_NAME = "$(TARGET_NAME)";

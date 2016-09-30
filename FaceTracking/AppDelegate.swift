@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  FaceTracking
+//  AutoCamera
 //
-//  Created by Pawel Chmiel on 30.09.2016.
+//  Created by Pawel Chmiel on 26.09.2016.
 //  Copyright © 2016 Pawel Chmiel. All rights reserved.
 //
 
