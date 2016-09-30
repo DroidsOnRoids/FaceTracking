@@ -119,10 +119,11 @@ extension ViewController {
     }
     
     func frontCamera() -> AVCaptureDevice? {
-        let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as? [AVCaptureDevice]
-        for device in devices! {
-            if device.position == .front {
-                return device
+        if let devices = AVCaptureDevice.devices(withMediaType: AVMediaTypeVideo) as? [AVCaptureDevice] {
+            for device in devices {
+                if device.position == .front {
+                    return device
+                }
             }
         }
         return nil
