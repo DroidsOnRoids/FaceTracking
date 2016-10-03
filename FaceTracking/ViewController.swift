@@ -144,7 +144,11 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         for feature in features {
             if let faceFeature = feature as? CIFaceFeature {
                 let faceRect = calculateFaceRect(facePosition: faceFeature.mouthPosition, faceBounds: faceFeature.bounds, clearAperture: cleanAperture)
-                update(with: faceRect, text: "has smile: \(faceFeature.hasSmile)\nhas closed left eye: \(faceFeature.leftEyeClosed)\nhas closed right eye: \(faceFeature.rightEyeClosed)")
+                let featureDetails = ["has smile: \(faceFeature.hasSmile)",
+                    "has closed left eye: \(faceFeature.leftEyeClosed)",
+                    "has closed right eye: \(faceFeature.rightEyeClosed)"]
+                
+                update(with: faceRect, text: featureDetails.joined(separator: "\n"))
             }
         }
         
