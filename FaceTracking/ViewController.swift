@@ -210,13 +210,7 @@ extension ViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         
         var faceRect = faceBounds
         
-//        var temp = faceRect.size.width
-//        faceRect.size.width = faceRect.size.height
-//        faceRect.size.height = temp
         swap(&faceRect.size.width, &faceRect.size.height)
-//        temp = faceRect.origin.x
-//        faceRect.origin.x = faceRect.origin.y
-//        faceRect.origin.y = temp
         swap(&faceRect.origin.x, &faceRect.origin.y)
 
         let widthScaleBy = previewBox.size.width / clearAperture.size.height
