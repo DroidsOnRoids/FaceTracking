@@ -6,3 +6,6 @@ branches:
 
 xcode_project: FaceTracking.xcodeproj
 xcode_scheme: FaceTracking
+
+script:
+- xcodebuild clean build test -project FaceTracking.xcodeproj -scheme FaceTracking
