@@ -40,8 +40,6 @@ class DetailsView: UIView {
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var shootBtn: UIButton!
-    
     var session: AVCaptureSession?
     var stillOutput = AVCaptureStillImageOutput()
     var borderLayer: CAShapeLayer?
