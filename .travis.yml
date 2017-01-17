@@ -1,0 +1,8 @@
+language: objective-c
+
+branches:
+ only:
+ - master
+
+xcode_project: FaceTracking.xcodeproj
+xcode_scheme: FaceTracking
